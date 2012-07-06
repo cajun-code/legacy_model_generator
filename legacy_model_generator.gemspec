@@ -2,10 +2,10 @@
 require File.expand_path('../lib/legacy_model_generator/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["BlackSliverado"]
-  gem.email         = ["blacksliverado@cdei.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.authors       = ["Allan Davis"]
+  gem.email         = ["cajun.code@gmail.com"]
+  gem.description   = %q{Model from legancy database}
+  gem.summary       = %q{Tools for creating model from legancy database.}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)

@@ -9,12 +9,19 @@ class Schema2modelGenerator < Rails::Generators::Base
   
   def create_models
     @models.each do |model_name|
-      table = Arel::Table.new(model_name.to_sym)
-      @model_name = model_name
-      @pk = table.primary_key
+      @table = Arel::Table.new(model_name.to_sym)
+      
       template "model.rb", "app/models/#{model_name.underscore}.rb" #, :table_name => model_name
     end
   end
   
-  
+  def pk
+    @table.primary_key.name
+  end
+  def clazz_name
+    @table.name.camelcase
+  end
+  def table_name
+    @table.name
+  end
 end

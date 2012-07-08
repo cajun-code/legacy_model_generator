@@ -14,4 +14,5 @@ Gem::Specification.new do |gem|
   gem.name          = "legacy_model_generator"
   gem.require_paths = ["lib"]
   gem.version       = LegacyModelGenerator::VERSION
+  gem.add_dependency "rails"
 end
